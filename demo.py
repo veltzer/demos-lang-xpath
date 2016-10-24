@@ -6,6 +6,12 @@ lxml.etree module.
 
 Note that there are two libraries in python: xml.etree and lxml.etree.
 use the latter, and beware of mixing them.
+
+References:
+- http://stackoverflow.com/questions/2755950/how-to-use-regular-expression-in-lxml-xpath
+- http://stackoverflow.com/questions/22718101/pretty-print-option-in-tostring-not-working-in-lxml
+- http://lxml.de/tutorial.html
+- http://stackoverflow.com/questions/23727696/list-can-not-be-serialized-error-when-using-xpath-with-lxml-etree
 '''
 
 import lxml.etree # for parse
