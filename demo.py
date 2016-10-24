@@ -18,6 +18,11 @@ import lxml.etree # for parse
 
 root = lxml.etree.parse('demo.xml')
 
+# this means that we can use regular expression functions like 'match'
+# by specifying 're:match' in our xpath expressions
+ns = lxml.etree.FunctionNamespace("http://exslt.org/regular-expressions")
+ns.prefix = 're'
+
 # for bar at any level
 for e in root.xpath('//bar'):
     print(e.get('title'))
@@ -33,6 +38,8 @@ for x in e_a:
     print(lxml.etree.tostring(x, pretty_print=True, encoding='unicode').strip())
 
 # look for any person whose text starts with "Mark" (regexp)
-e_a = root.xpath('//person[re:match(text(),"^Mark")]', namespaces={"re": "http://exslt.org/regular-expressions"})
+# this will work even without the registration of the namespace above...
+#e_a = root.xpath('//person[re:match(text(),"^Mark")]', namespaces={"re": "http://exslt.org/regular-expressions"})
+e_a = root.xpath('//person[re:match(text(),"^Mark")]')
 for x in e_a:
     print(lxml.etree.tostring(x, pretty_print=True, encoding='unicode').strip())
