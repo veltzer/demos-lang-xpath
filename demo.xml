@@ -1,0 +1,12 @@
+<root>
+	<foo>
+		<bar title='this is the text you are looking for'>
+			bar content
+		</bar>
+	</foo>
+	<people>
+		<person>Mark Veltzer</person>
+		<person>Mark Walberg</person>
+		<person>Linus Torvalds</person>
+	</people>
+</root>
