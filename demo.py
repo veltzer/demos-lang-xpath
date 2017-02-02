@@ -43,3 +43,15 @@ for x in e_a:
 e_a = root.xpath('//person[re:match(text(),"^Mark")]')
 for x in e_a:
     print(lxml.etree.tostring(x, pretty_print=True, encoding='unicode').strip())
+
+# look for a span whose id is productTitle and return its text
+e_a = root.xpath('//span[@id="productTitle"]/text()')[0].strip()
+print('the text you want stripped is [{}]'.format(e_a))
+#for x in e_a:
+#   print(lxml.etree.tostring(x, pretty_print=True, encoding='unicode').strip())
+
+# This example shows that if xpath cannot find elements that match your expression
+# then you just get an empty list
+e_a = root.xpath('//span[@id="this does not exist"]/text()')
+assert len(e_a)==0
+assert type(e_a) is list

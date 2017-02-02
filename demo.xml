@@ -9,4 +9,5 @@
 		<person>Mark Walberg</person>
 		<person>Linus Torvalds</person>
 	</people>
+	<span id="productTitle">This is the text you want  </span>
 </root>
