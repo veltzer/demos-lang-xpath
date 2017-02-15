@@ -1,0 +1,10 @@
+<root xmlns="http://fubar">
+	<foo>
+		<bar title='this is the text you are looking for'>
+			bar content
+		</bar>
+	</foo>
+	<bar>
+		this is some more bar
+	</bar>
+</root>
