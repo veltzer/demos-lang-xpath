@@ -1,0 +1,16 @@
+<root>
+	<foo>
+		<bar title='this is the text you are looking for'>
+			bar content
+		</bar>
+	</foo>
+	<a>mark</a>
+	<people>
+		<person>Mark Veltzer</person>
+		<person>Mark Walberg</person>
+		<person>Linus Torvalds</person>
+	</people>
+	<a>doron</a>
+	<single>this is the text of the single element</single>
+	<span id="productTitle">This is the text you want  </span>
+</root>
