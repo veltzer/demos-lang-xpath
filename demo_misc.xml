@@ -9,5 +9,10 @@
 		<person>Mark Walberg</person>
 		<person>Linus Torvalds</person>
 	</people>
+	<prs>
+		<prs id="Mark Veltzer"/>
+		<prs id="Mark Walberg"/>
+		<prs id="Linus Torvalds"/>
+	</prs>
 	<span id="productTitle">This is the text you want  </span>
 </root>

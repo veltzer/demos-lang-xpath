@@ -44,6 +44,11 @@ e_a = root.xpath('//person[re:match(text(),"^Mark")]')
 for x in e_a:
     print(lxml.etree.tostring(x, pretty_print=True, encoding='unicode').strip())
 
+# regexp search on attributes
+e_a = root.xpath('//prs[re:match(@id,"^Mark")]')
+for x in e_a:
+    print(lxml.etree.tostring(x, pretty_print=True, encoding='unicode').strip())
+
 # look for a span whose id is productTitle and return its text
 e_a = root.xpath('//span[@id="productTitle"]/text()')[0].strip()
 print('the text you want stripped is [{}]'.format(e_a))
