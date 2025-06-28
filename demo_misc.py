@@ -51,7 +51,7 @@ for x in e_a:
 
 # look for a span whose id is productTitle and return its text
 e_a = root.xpath('//span[@id="productTitle"]/text()')[0].strip()
-print('the text you want stripped is [{}]'.format(e_a))
+print(f'the text you want stripped is [{e_a}]')
 #for x in e_a:
 #   print(lxml.etree.tostring(x, pretty_print=True, encoding='unicode').strip())
 
