@@ -6,3 +6,14 @@ src_dirs = ["."]
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]
 src_dirs = [".github/workflows"]
+
+# ─── markdown ────────────────────────────────────────────────────────────────
+
+[processor.rumdl]
+src_files = ["README.md"]
+
+# ─── xml / svg ───────────────────────────────────────────────────────────────
+
+[processor.xmllint]
+src_dirs = ["unsorted"]
+src_files = ["demo_full_path.xml", "demo_misc.xml", "demo_namespace.xml", "demo_navigation.xml"]
