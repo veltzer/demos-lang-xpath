@@ -18,6 +18,6 @@ src_files = ["README.md"]
 
 # ─── xml / svg ───────────────────────────────────────────────────────────────
 
-[processor.checker.xmllint]
+[processor.checker.ixmllint]
 src_dirs = ["unsorted"]
 src_files = ["demo_full_path.xml", "demo_misc.xml", "demo_namespace.xml", "demo_navigation.xml"]
