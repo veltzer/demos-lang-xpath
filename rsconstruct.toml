@@ -24,5 +24,7 @@ src_files = ["README.md"]
 # ─── xml / svg ───────────────────────────────────────────────────────────────
 
 [processor.checker.ixmllint]
+# warnings fail too, not only fatal errors
+strict = true
 src_dirs = ["unsorted"]
 src_files = ["demo_full_path.xml", "demo_misc.xml", "demo_namespace.xml", "demo_navigation.xml"]
