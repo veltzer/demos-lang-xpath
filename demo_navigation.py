@@ -1,10 +1,10 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 
 """
 This is a demo of how to navigate the xml tree in lxml
 """
 
-import lxml.etree # for parse
+import lxml.etree  # for parse
 
 parsed = lxml.etree.parse('demo_navigation.xml')
 
@@ -22,7 +22,7 @@ for child in root.iter("a"):
 print("================")
 
 # get the single element of a tag
-print(list(root.iter("single"))[0].text)
+print(next(root.iter("single")).text)
 print("================")
 
 for x in root.findall("single"):

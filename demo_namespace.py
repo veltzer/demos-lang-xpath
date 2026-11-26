@@ -1,11 +1,11 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 
 '''
 This is an example of how to deal with namespace issues when parsing XML
 in python
 '''
 
-import lxml.etree # for parse
+import lxml.etree  # for parse
 
 root = lxml.etree.parse('demo_namespace.xml')
 

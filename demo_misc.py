@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python
 
 '''
 This is an example of how to read XML in python using the built in
@@ -14,7 +14,7 @@ References:
 - http://stackoverflow.com/questions/23727696/list-can-not-be-serialized-error-when-using-xpath-with-lxml-etree
 '''
 
-import lxml.etree # for parse
+import lxml.etree  # for parse
 
 root = lxml.etree.parse('demo_misc.xml')
 
