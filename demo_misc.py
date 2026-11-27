@@ -39,7 +39,7 @@ for x in e_a:
 
 # look for any person whose text starts with "Mark" (regexp)
 # this will work even without the registration of the namespace above...
-#e_a = root.xpath('//person[re:match(text(),"^Mark")]', namespaces={"re": "http://exslt.org/regular-expressions"})
+#e_a = root.xpath('//person[re:match(text(),"^Mark")]', namespaces={"re": "http://exslt.org/regular-expressions"})  # noqa: ERA001  teaching: kept in the comment for the reader
 e_a = root.xpath('//person[re:match(text(),"^Mark")]')
 for x in e_a:
     print(lxml.etree.tostring(x, pretty_print=True, encoding='unicode').strip())
@@ -53,7 +53,7 @@ for x in e_a:
 e_a = root.xpath('//span[@id="productTitle"]/text()')[0].strip()
 print(f'the text you want stripped is [{e_a}]')
 #for x in e_a:
-#   print(lxml.etree.tostring(x, pretty_print=True, encoding='unicode').strip())
+#   print(lxml.etree.tostring(x, pretty_print=True, encoding='unicode').strip())  # noqa: ERA001  teaching: kept in the comment for the reader
 
 # This example shows that if xpath cannot find elements that match your expression
 # then you just get an empty list
